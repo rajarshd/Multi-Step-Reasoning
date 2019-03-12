@@ -1,7 +1,5 @@
 # Multi Step Reasoning for Open Domain Question Answering
 
-To-do
-- [ ] Integrate with code for SGTree
 
 ![gif](image/multi-step-reasoner.png)
 Code for the paper [Multi-step Retriever-Reader Interaction for Scalable Open-domain Question Answering](https://openreview.net/forum?id=HkfPSh05K7)
@@ -62,7 +60,8 @@ data_dir -- path to dataset that you downloaded
 model_dir -- path to pretrained model that you downloaded
 out_dir -- directory for logging
 ```
-
+## To-do
+- [ ] Integrate with code for SGTree
 ## Citation
 ```
 @inproceedings{
