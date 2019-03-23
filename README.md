@@ -1,7 +1,7 @@
 # Multi Step Reasoning for Open Domain Question Answering
 
 
-![gif](image/multi-step-reasoner.png)
+![gif](multi-step-reasoner.png)
 Code for the paper [Multi-step Retriever-Reader Interaction for Scalable Open-domain Question Answering](https://openreview.net/forum?id=HkfPSh05K7)
 
 *Acknowledgement*: This codebase started from the awesome [Dr.QA repository](https://github.com/facebookresearch/DrQA) created and maintained by [Adam Fisch](https://people.csail.mit.edu/fisch/). Thanks Adam!
