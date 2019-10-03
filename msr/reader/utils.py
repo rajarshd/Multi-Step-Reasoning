@@ -141,11 +141,6 @@ def build_word_dict(args, train_exs, dev_exs):
 
     # save so we dont have to make it from scratch again
     word_dict.save()
-
-    logger.info("Exiting!")
-    import sys
-    sys.exit(0)
-
     return word_dict
 
 
@@ -162,8 +157,8 @@ def top_question_words(args, examples, word_dict):
 
 def build_feature_dict(args, examples):
     """Index features (one hot) from fields in examples and options."""
-    # if not args.create_vocab:
-    return json.load(open(os.path.join(args.vocab_dir, 'feat_dict.json')))
+    if not args.create_vocab:
+    	return json.load(open(os.path.join(args.vocab_dir, 'feat_dict.json')))
 
     def _insert(feature):
         if feature not in feature_dict:
@@ -175,24 +170,8 @@ def build_feature_dict(args, examples):
     if args.use_in_question:
         _insert('in_question')
         _insert('in_question_uncased')
-        if args.use_lemma:
-            _insert('in_question_lemma')
-
-    # Part of speech tag features
-    if args.use_pos:
-        for ex in examples:
-            for w in ex['pos']:
-                _insert('pos=%s' % w)
-
-    # Named entity tag features
-    if args.use_ner:
-        for ex in examples:
-            for w in ex['ner']:
-                _insert('ner=%s' % w)
-
-    # Term frequency feature
-    if args.use_tf:
-        _insert('tf')
+    with open(os.path.join(args.vocab_dir, 'feat_dict.json'), "w") as  feat_dict_fp:
+      json.dump(feature_dict, feat_dict_fp)
     return feature_dict
 
 
