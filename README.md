@@ -14,7 +14,7 @@ source setup.sh
 ```
 
 ## Data
-We are making the pre-processed data and paragraph vectors available so that is is easier to get started. They can downloaded from [here](http://iesl.cs.umass.edu/downloads/multi-step-reasoning-iclr19/data.tar.gz). (41GB compressed, 56GB decompressed). If you need the pretrained paragraph encoder used to generate the vectors, feel free to get in touch with me.
+We are making the pre-processed data and paragraph vectors available so that is is easier to get started. They can downloaded from [here](http://iesl.cs.umass.edu/downloads/multi-step-reasoning-iclr19/data.tar.gz). (41GB compressed, 56GB decompressed; user/pass: guest/guest). If you need the pretrained paragraph encoder used to generate the vectors, feel free to get in touch with me.
 After un-taring, you will find a directory corresponding to each dataset. Each directory further contains:
 ```
 data/ -- Processed data (*.pkl files)
