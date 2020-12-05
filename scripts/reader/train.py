@@ -23,7 +23,7 @@ from collections import defaultdict
 from msr.reader import utils, vector, config, data
 from msr.reader.model import Model
 
-from multi_corpus import MultiCorpus
+from paragraph_encoder.multi_corpus import MultiCorpus
 
 from torch.utils.data.sampler import SequentialSampler, RandomSampler
 logger = logging.getLogger()
