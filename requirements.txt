@@ -12,7 +12,7 @@
 # paragraph_encoder/multi_corpus.py: 1
 # paragraph_encoder/train_para_encoder.py: 2
 # scripts/reader/train.py: 12
-numpy == 1.15.0
+numpy == 1.22.0
 
 # drqa/tokenizers/corenlp_tokenizer.py: 14
 pexpect == 4.2.1
