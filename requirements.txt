@@ -72,4 +72,4 @@ tqdm == 4.24.0
 
 # paragraph_encoder/model/util.py: 10
 # paragraph_encoder/model/utils.py: 10
-ujson == 1.35
+ujson == 5.4.0
